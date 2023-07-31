@@ -1,5 +1,6 @@
 import React from 'react'
 import Cards from './Cards'
+import product from '../assets/product2.jpg'
 
 const Products = () => {
   return (
@@ -7,10 +8,10 @@ const Products = () => {
     <div className="container">
         <div className="card">
             <div className="img">
-                <img src="" alt="" />
+                <img src={product} alt="" />
             </div>
             <div className="text">
-                <h4>Rs.<del>2500</del>2000</h4>
+                <h4>Rs.2000</h4>
             <p>This is the highly effective product.</p>
             </div>
         </div>

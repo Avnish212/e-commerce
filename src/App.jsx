@@ -4,12 +4,13 @@ import Hero from './components/Hero'
 import Products from './components/Products'
 import Cart from './components/Cart'
 
+
 const App = () => {
   return (
     <>
     <Navbar/>
-    <Hero/>
-    {/* <Products/> */}
+    {/* <Hero/> */}
+    <Products/>
     </>
   )
 }
