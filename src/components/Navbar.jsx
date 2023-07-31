@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../assets/online-shop.png'
 
 const Navbar = () => {
   return (
@@ -10,6 +11,7 @@ const Navbar = () => {
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><img src={logo} alt="" /></li>
           <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Products</a></li>
           <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
@@ -18,7 +20,7 @@ const Navbar = () => {
         </ul>
 
         <div class="text-end">
-          <button type="button" class="btn btn-primary">Cart (0)</button>
+          <button type="button" class="btn btn-warning">Cart (0)</button>
         </div>
       </div>
     </div>
