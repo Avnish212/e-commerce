@@ -8,42 +8,82 @@ const Cart = () => {
   return (
     <>
     <div className="cart">
-    <div className="box11">
-    <div className="bill">
-        <h2>Shopping Cart</h2>
-        <div className="bilbox">
-            <p>product1 - $10</p>
-            <p>product2 - $30</p>
+    <div className="box11 p-3">
+        <h2 className='mx-5'>Shopping Cart</h2>
+        <div className="bilbox my-3 ">
+            <div className="row">
+                <div className="col">
+                    <h5>Products Name</h5>
+                </div>
+                <div className="col">
+                    <h5>Price</h5>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                <p>product1</p>
+                </div>
+                <div className="col">
+                <p>$10</p>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                <p>product2</p>
+                </div>
+                <div className="col">
+                <p>$100</p>
+                </div>
+            </div>
+            <div className="row">
+                <div className="col">
+                <p>product3</p>
+                </div>
+                <div className="col">
+                <p>$30</p>
+                </div>
+            </div>
+            <hr />
+            <div className="row">
+                <div className="col">
+                   <h5>Total</h5> 
+                </div>
+                <div className="col">
+                    <h5>$40</h5>
+                </div>
+            </div> 
         </div>
-        <p>Total: <b>$40</b></p> 
-    </div>
+        
     </div>
     <div className="box22">
-        <div className="boxx1">
-            <div className="boxx-img">
+        <div className="card">
+            <div className="img">
             <img src={img1}alt="" />
             </div>
-            <div className="boxx-txt">
+            <div className="text">
             <p>Product1 <b>$10</b></p>
             <p>any of your favourite product cab be </p>
+            <button className='removebtn'>Remove</button>
             </div>
         </div>
-        <div className="boxx1">
-            <div className="boxx-img">
+        <div className="card">
+            <div className="img">
             <img src={img2} alt="" />
             </div>
-            <div className="boxx-txt">
+            <div className="text">
             <p>Product1 <b>$10</b></p>
             <p>any of your favourite product cab be </p>
+            <button className='removebtn'>Remove</button>
             </div>
         </div>
-        <div className="boxx1">
-            <div className="boxx-img">
+        <div className="card">
+            <div className="img">
             <img src={img3} alt="" />
             </div>
-            <div className="boxx-txt">
+            <div className="text">
             <p>Product1 <b>$10</b></p>
             <p>any of your favourite product cab be </p>
+            <button className='removebtn'>Remove</button>
             </div>
         </div>
     </div>

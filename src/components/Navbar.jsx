@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/online-shop.png'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -12,15 +13,16 @@ const Navbar = () => {
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><img src={logo} alt="" /></li>
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Products</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
-          <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+          <li><Link to="/" class="nav-link px-2 text-secondary">Home</Link></li>
+          <li><Link to="/Products" class="nav-link px-2 text-white">Products</Link></li>
+          <li><Link to="#" class="nav-link px-2 text-white">Pricing</Link></li>
+          <li><Link to="#" class="nav-link px-2 text-white">FAQs</Link></li>
+          <li><Link to="#" class="nav-link px-2 text-white">About</Link></li>
         </ul>
 
         <div class="text-end">
-          <button type="button" class="btn btn-warning">Cart (0)</button>
+          <Link to="/Cart"><button type="button" class="btn btn-warning">Cart (0)</button></Link>
+          
         </div>
       </div>
     </div>
