@@ -1,14 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import logo from '../assets/online-shop.png'
 import { Link } from 'react-router-dom'
+import CartContext from './context/cart/CartContext'
+
 
 const Navbar = () => {
+
+  const {cart} = useContext(CartContext)
+  console.log("from navbar" , cart)
+
   return (
     <header class="nav1 p-3">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlinkHref="#bootstrap"></use></svg>
         </a>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
@@ -21,7 +27,7 @@ const Navbar = () => {
         </ul>
 
         <div class="text-end">
-          <Link to="/Cart"><button type="button" class="btn btn-warning">Cart (0)</button></Link>
+          <Link to="/Cart"><button type="button" class="btn btn-warning">Cart ({cart.length})</button></Link>
           
         </div>
       </div>

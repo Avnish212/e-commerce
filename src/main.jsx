@@ -7,8 +7,7 @@ import ProductsContext, { ProductsProvider } from './components/context/products
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ProductsProvider >
-    <App />
+        <App />
     </ProductsProvider>
-    
   </React.StrictMode>,
 )
